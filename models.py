@@ -42,5 +42,6 @@ class Log(Base):
     message = Column(String(1000))
 
 engine = create_engine('sqlite:///orders.db')
+# Comment to change
 Base.metadata.create_all(engine)
 
